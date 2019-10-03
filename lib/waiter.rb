@@ -13,7 +13,7 @@ class Waiter
     @@all 
   end
   
-  def add_meal(customer, total, tip) #same as Customer instance, only swapping self to the Waiter's spot
+  def new_meal(customer, total, tip) #same as Customer instance, only swapping self to the Waiter's spot
     Meal.new(self, customer, total, tip)
   end
 end
