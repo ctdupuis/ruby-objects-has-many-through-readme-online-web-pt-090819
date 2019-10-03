@@ -17,7 +17,7 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
   
-  def meals #create a method that pulls all meals equal to the specific instance of this Customer
+  def meals #create a method that pulls all Meals equal to the specific instance of this Customer
     Meal.all.select { |meal| meal.customer == self }
   end
 end
