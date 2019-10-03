@@ -20,4 +20,8 @@ class Customer
   def meals #create a method that pulls all Meals equal to the specific instance of this Customer
     Meal.all.select { |meal| meal.customer == self }
   end
+  
+  def waiters #Uses the above Meals method to pull the Waiter instances from the return value of Meals
+    meals.map{|waiter| meal.waiter}
+  end
 end
