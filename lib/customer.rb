@@ -22,6 +22,6 @@ class Customer
   end
   
   def waiters #Uses the above Meals method to pull the Waiter instances from the return value of Meals
-    meals.map { |waiter| meal.waiter }
+    meals.map { |meal| meal.waiter }
   end
 end
